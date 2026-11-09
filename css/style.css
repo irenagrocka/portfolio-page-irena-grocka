@@ -985,3 +985,99 @@ body.home-page {
     text-align: center;
   }
 }
+
+/* ==========================================================
+   Shared footer: identical on every page
+   ========================================================== */
+.site-footer {
+  /* Full-bleed even when the page body is width-constrained */
+  width: 100vw;
+  margin: 0 0 0 calc(50% - 50vw);
+  padding: 32px 0;
+  background: #111111;
+  text-align: left;
+}
+
+/* Beat the older #contact box styles above (pink card, fixed width, shadow) */
+#contact.site-footer {
+  width: 100vw;
+  max-width: none;
+  margin: 0 0 0 calc(50% - 50vw);
+  padding: 32px 0;
+  background: #111111;
+  box-shadow: none;
+  font-size: inherit;
+}
+
+.qe-resume + #contact.site-footer {
+  margin-top: 80px;
+}
+
+body:has(> .site-footer) {
+  padding-bottom: 0;
+  overflow-x: hidden;
+}
+
+.site-footer-inner {
+  max-width: 1056px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-footer-email {
+  color: #ffffff;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.site-footer-email:hover,
+.site-footer-email:focus-visible {
+  color: #f2c2a5;
+  text-decoration: underline;
+}
+
+.site-footer-social {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.site-footer-social a {
+  color: #ffffff;
+  display: inline-flex;
+  padding: 4px;
+}
+
+.site-footer-social a:hover,
+.site-footer-social a:focus-visible {
+  color: #f2c2a5;
+}
+
+.site-footer a:focus-visible {
+  outline: 3px solid #eaa98a;
+  outline-offset: 3px;
+}
+
+.site-footer-social svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (max-width: 575px) {
+  .site-footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
