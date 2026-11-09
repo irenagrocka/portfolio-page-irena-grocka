@@ -549,14 +549,14 @@ body.home-page {
   max-width: none;
   margin: 0;
   padding: 0;
-  background: var(--home-surface);
+  background: linear-gradient(180deg, var(--home-surface) 0%, var(--home-surface) 55%, #f3ece8 100%);
   color: var(--home-ink);
   overflow-x: hidden;
 }
 
 .home-page .home-wrap {
   width: 100%;
-  max-width: 1024px;
+  max-width: 1056px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -564,7 +564,7 @@ body.home-page {
 /* Navigation */
 .home-page .home-nav {
   background: var(--home-ink);
-  min-height: 68px;
+  min-height: 76px;
   padding: 0;
 }
 
@@ -646,9 +646,12 @@ body.home-page {
 /* Hero */
 .home-page .home-hero {
   position: relative;
-  margin-top: 68px;
-  padding: 48px 0 24px;
-  background: linear-gradient(115deg, #ecebea 0%, #ece6e2 35%, #f3cfbb 70%, var(--home-peach-deep) 100%);
+  margin-top: 76px;
+  padding: 56px 0 110px;
+  /* Peach gradient that dissolves into the page background instead of ending on a hard edge */
+  background:
+    linear-gradient(180deg, rgba(244, 244, 244, 0) 0%, rgba(244, 244, 244, 0) 68%, var(--home-surface) 100%),
+    linear-gradient(115deg, #ecebea 0%, #ece6e2 35%, #f3cfbb 72%, #efb59a 100%);
   overflow: hidden;
 }
 
@@ -681,17 +684,17 @@ body.home-page {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 452px minmax(0, 1fr);
   align-items: center;
-  gap: 32px;
+  gap: 10px;
   margin-top: 20px;
 }
 
 .home-page .home-hero-side h3 {
   font-family: var(--default-font-family);
-  font-size: 32px;
+  font-size: 25px;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.15;
   text-align: left;
-  margin: 0 0 18px;
+  margin: 0 0 14px;
   color: var(--home-ink);
 }
 
@@ -704,11 +707,12 @@ body.home-page {
 }
 
 .home-page .home-hero-left {
-  margin-top: -110px;
+  margin-top: -70px;
 }
 
 .home-page .home-hero-right {
-  margin-top: -110px;
+  margin-top: -70px;
+  padding-left: 16px;
 }
 
 /* Split portrait: left half monochrome, right half colour */
@@ -776,7 +780,7 @@ body.home-page {
 
 /* Buttons, divider and projects */
 .home-page .home-body {
-  padding: 48px 0 64px;
+  padding: 8px 0 80px;
 }
 
 .home-page .home-actions {
@@ -930,6 +934,7 @@ body.home-page {
   .home-page .home-hero-left,
   .home-page .home-hero-right {
     margin-top: 0;
+    padding-left: 0;
     text-align: center;
   }
 
