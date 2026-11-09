@@ -1,23 +1,14 @@
 {
-  "name": "advanced-bootstrap-homework-challenge",
+  "name": "portfolio-page-irena-grocka",
   "version": "1.0.0",
-  "description": "",
+  "description": "Portfolio website of Irena Grocka, Lead Quality Engineer and frontend developer",
   "main": "index.html",
   "scripts": {
     "start": "serve",
     "build": "echo This is a static template, there is no bundler or bundling involved!"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codesandbox-app/static-template.git"
-  },
   "keywords": [],
-  "author": "Ives van Hoorne",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/codesandbox-app/static-template/issues"
-  },
-  "homepage": "https://github.com/codesandbox-app/static-template#readme",
+  "author": "Irena Grocka",
   "devDependencies": {
     "serve": "^11.2.0"
   }

@@ -1,12 +1,18 @@
+// Download CV: attach a click handler to every "Download CV" button on the page.
+(function () {
+  var CV_URL = "src/documents/Irena_Grocka_CV.pdf";
+  var CV_FILENAME = "Irena_Grocka_Lead_Quality_Engineer_CV.pdf";
 
-function downloadCV() {
-    var cvUrl = 'src/documents/Irena_Grocka_CV.pdf';
+  function downloadCV() {
+    var anchor = document.createElement("a");
+    anchor.href = CV_URL;
+    anchor.download = CV_FILENAME;
+    document.body.appendChild(anchor);
+    anchor.click();
+    document.body.removeChild(anchor);
+  }
 
-    // Create an anchor element
-    var anchorElement = document.createElement('a');
-    anchorElement.href = cvUrl;
-    anchorElement.download = 'Irena_Grocka_CV.pdf';
-
-    // Add click event listener to the download button
-    document.getElementById('downloadButton').addEventListener('click', downloadCV);
-}
+  document.querySelectorAll(".download-cv-button").forEach(function (button) {
+    button.addEventListener("click", downloadCV);
+  });
+})();
