@@ -16,3 +16,15 @@
     button.addEventListener("click", downloadCV);
   });
 })();
+
+// Core skills marquee: duplicate the cards once so the strip loops seamlessly.
+(function () {
+  document.querySelectorAll(".qe-track-inner").forEach(function (track) {
+    Array.prototype.slice.call(track.children).forEach(function (card) {
+      var copy = card.cloneNode(true);
+      copy.setAttribute("aria-hidden", "true");
+      copy.setAttribute("data-clone", "");
+      track.appendChild(copy);
+    });
+  });
+})();
