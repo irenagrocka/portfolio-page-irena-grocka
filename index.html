@@ -10,104 +10,136 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Poppins:wght@300;400;500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400..900&family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400&display=swap"
     rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d4de4fcb96.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="home-page">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Irena Grocka</a>
+  <nav class="navbar navbar-expand-lg navbar-dark home-nav fixed-top">
+    <div class="home-wrap home-nav-inner">
+      <a class="navbar-brand home-brand" href="index.html">
+        <span class="home-logo" aria-hidden="true">IG</span>
+        Irena Grocka
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+        <div class="navbar-nav home-nav-links">
           <a class="nav-link active" aria-current="page" title="Portfolio Home Page" href="index.html">Home</a>
           <a class="nav-link" title="About Irena Grocka" href="about.html">About me</a>
           <a class="nav-link" title="Portfolio Irena Grocka" href="porfolio.html">Projects portfolio</a>
           <a class="nav-link" title="Quality experience Irena Grocka" href="qa_experience.html">QE experience</a>
           <a class="nav-link" title="Contact Irena Grocka" href="about.html#contact">Contact me</a>
         </div>
+        <div class="home-social">
+          <a href="https://www.linkedin.com/in/irena-grocka/" target="_blank" rel="noopener" aria-label="LinkedIn Irena Grocka">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"></path></svg>
+          </a>
+          <a href="https://github.com/irenagrocka" target="_blank" rel="noopener" aria-label="GitHub Irena Grocka">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2-6-2.5M15 21v-3.5a3 3 0 0 0-.8-2.3c2.7-.3 5.6-1.4 5.6-6a4.7 4.7 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.6 2.5 5.6 2.8 5.6 2.8a4.3 4.3 0 0 0-.1 3.2A4.7 4.7 0 0 0 4.2 9.2c0 4.6 2.8 5.7 5.5 6a3 3 0 0 0-.8 2.3V21"></path></svg>
+          </a>
+          <a href="https://www.instagram.com/irenagrocka/" target="_blank" rel="noopener" aria-label="Instagram Irena Grocka">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5v.01"></path></svg>
+          </a>
+        </div>
       </div>
     </div>
   </nav>
 
-  <main class="container">
-    <div class="hero">
-      <h2>Hi, I am</h2>
-      <h1><span class="name">Irena</span> Grocka</h1>
-      <h3>
-        Lead Quality Engineer &amp; QE AI Champion by day, Frontend Developer by night, based in the United Kingdom
-      </h3>
-      <img src="images/Irena_grocka.png" alt="Portrait of Irena Grocka" class="hero-img" />
-      <div class="navigation-links">
-        <a href="about.html#contact" title="Contact Irena Grocka" class="primary-button">Contact me</a>
-        <a href="qa_experience.html" title="Quality engineering experience of Irena Grocka"
-          class="secondary-button">My experience</a>
-        <button type="button" title="Download CV Irena Grocka" class="primary-button download-cv-button">Download
-          CV</button>
-      </div>
-    </div>
+  <main>
+    <section class="home-hero">
+      <div class="home-wrap">
+        <div class="home-hero-title">
+          <h2>Hi, I am</h2>
+          <h1>Irena Grocka</h1>
+        </div>
 
-    <div class="home-projects">
-      <div class="row">
-        <div class="col-md-4 mt-5">
-          <a href="porfolio.html#forecast">
-            <img src="images/forecast_app.png" alt="Screenshot of the forecast app" class="img-fluid rounded" />
-          </a>
+        <div class="home-hero-grid">
+          <div class="home-hero-side home-hero-left">
+            <h3>Lead Quality Engineer &amp; QE AI Champion</h3>
+            <p>by day,</p>
+          </div>
+
+          <div class="home-portrait">
+            <img src="images/Irena_grocka.png" alt="" aria-hidden="true" class="home-portrait-img home-portrait-mono" />
+            <img src="images/Irena_grocka.png" alt="Portrait of Irena Grocka, half monochrome and half in colour"
+              class="home-portrait-img home-portrait-colour" />
+          </div>
+
+          <div class="home-hero-side home-hero-right">
+            <h3>&lt;Frontend Developer&gt;</h3>
+            <p>by night, based in the United Kingdom</p>
+          </div>
         </div>
-        <div class="col-md-4 mt-5">
-          <a href="porfolio.html#clock">
-            <img src="images/clock_app.png" alt="Screenshot of the world clock app" class="img-fluid rounded" />
-          </a>
+
+        <div class="home-code home-code-left" aria-hidden="true">
+          <span>✓ login.spec.ts</span>
+          <span>✓ a11y.spec.ts</span>
+          <span>1,700 passed</span>
         </div>
-        <div class="col-md-4 mt-5">
-          <a href="porfolio.html#cook-ai">
-            <img src="images/cook_ai_app.png" alt="Screenshot of the CookSmarter AI app" class="img-fluid rounded" />
-          </a>
+        <div class="home-code home-code-right" aria-hidden="true">
+          <span>&lt;App /&gt;</span>
+          <span>useState()</span>
+          <span>npm run build ✓</span>
         </div>
-        <div class="col-md-4 mt-5">
-          <a href="porfolio.html#pink">
-            <img src="images/Pink.png" alt="Screenshot of the P!nk rock star app" class="img-fluid rounded" />
-          </a>
+      </div>
+    </section>
+
+    <section class="home-body">
+      <div class="home-wrap">
+        <div class="home-actions">
+          <a href="about.html#contact" title="Contact Irena Grocka" class="home-btn home-btn-dark">Contact me</a>
+          <a href="qa_experience.html" title="Quality engineering experience of Irena Grocka"
+            class="home-btn home-btn-peach">My experience</a>
+          <button type="button" title="Download CV Irena Grocka"
+            class="home-btn home-btn-outline download-cv-button">Download CV</button>
         </div>
-        <div class="col-md-4 mt-5">
-          <a href="porfolio.html#react-forecast">
-            <img src="images/React_Forecast.png" alt="Screenshot of the React forecast app"
-              class="img-fluid rounded" />
+
+        <hr class="home-divider" />
+
+        <div class="home-projects-grid">
+          <a href="porfolio.html#forecast" class="home-project">
+            <img src="images/forecast_app.png" alt="Screenshot of the forecast app" />
           </a>
-        </div>
-        <div class="col-md-4 mt-5">
-          <a href="porfolio.html#dictionary">
-            <img src="images/dictionary.png" alt="Screenshot of the dictionary app" class="img-fluid rounded" />
+          <a href="porfolio.html#clock" class="home-project">
+            <img src="images/clock_app.png" alt="Screenshot of the world clock app" />
+          </a>
+          <a href="porfolio.html#cook-ai" class="home-project">
+            <img src="images/cook_ai_app.png" alt="Screenshot of the CookSmarter AI app" />
+          </a>
+          <a href="porfolio.html#pink" class="home-project">
+            <img src="images/Pink.png" alt="Screenshot of the P!nk rock star app" />
+          </a>
+          <a href="porfolio.html#react-forecast" class="home-project">
+            <img src="images/React_Forecast.png" alt="Screenshot of the React forecast app" />
+          </a>
+          <a href="porfolio.html#dictionary" class="home-project">
+            <img src="images/dictionary.png" alt="Screenshot of the dictionary app" />
           </a>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="mt-200">
-      <a href="mailto:irena.grocka@gmail.com" title="Email Irena Grocka" class="email-link">
-        irena.grocka@gmail.com
-      </a>
-    </div>
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/irena-grocka/" target="_blank" rel="noopener" title="LinkedIn Irena Grocka">
-        <i class="s-l fa-brands fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/irenagrocka" target="_blank" rel="noopener" title="GitHub Irena Grocka">
-        <i class="s-l fa-brands fa-github"></i>
-      </a>
-      <a href="https://www.instagram.com/irenagrocka/" target="_blank" rel="noopener" title="Instagram Irena Grocka">
-        <i class="s-l fa-brands fa-square-instagram"></i>
-      </a>
+  <footer class="home-footer">
+    <div class="home-wrap home-footer-inner">
+      <a href="mailto:irena.grocka@gmail.com" title="Email Irena Grocka" class="home-email">irena.grocka@gmail.com</a>
+      <div class="home-social">
+        <a href="https://www.linkedin.com/in/irena-grocka/" target="_blank" rel="noopener" aria-label="LinkedIn Irena Grocka">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"></rect><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"></path></svg>
+        </a>
+        <a href="https://github.com/irenagrocka" target="_blank" rel="noopener" aria-label="GitHub Irena Grocka">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2-6-2.5M15 21v-3.5a3 3 0 0 0-.8-2.3c2.7-.3 5.6-1.4 5.6-6a4.7 4.7 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 0 0-6 0C6.6 2.5 5.6 2.8 5.6 2.8a4.3 4.3 0 0 0-.1 3.2A4.7 4.7 0 0 0 4.2 9.2c0 4.6 2.8 5.7 5.5 6a3 3 0 0 0-.8 2.3V21"></path></svg>
+        </a>
+        <a href="https://www.instagram.com/irenagrocka/" target="_blank" rel="noopener" aria-label="Instagram Irena Grocka">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><path d="M17.5 6.5v.01"></path></svg>
+        </a>
+      </div>
     </div>
   </footer>
 
